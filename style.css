@@ -1,0 +1,37 @@
+html, body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  scrollbar-width: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav.navigation {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 60px 0px;
+  color: white;
+  gap: 20px;
+}
+
+.section {
+  height: 100vh;
+}
+
+section#home-section {
+  background: rgb(31, 55, 77);
+  background: radial-gradient(circle, rgb(31, 55, 77) 0%, rgb(24, 32, 39) 100%);
+  background-position: 25% 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */
