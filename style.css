@@ -3,8 +3,8 @@ html, body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-* {
-  scrollbar-width: 5px;
+::-webkit-scrollbar {
+  width: 0px;
 }
 
 a {
@@ -189,4 +189,20 @@ section#work-section .container .work-item .hover-details {
   transform: translateY(500px);
   transition: 300ms;
   border-radius: 10px 10px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+section#work-section .container .work-item .hover-details .github-button {
+  cursor: pointer;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: black;
+  display: inline-flex;
+  align-items: center;
+}
+section#work-section .container .work-item .hover-details .github-button i {
+  font-size: 20px;
+  margin-right: 10px;
 }/*# sourceMappingURL=style.css.map */
