@@ -133,4 +133,60 @@ section.small-section .container {
 }
 section.small-section .container img {
   height: 70px;
+}
+
+section#work-section {
+  color: white;
+}
+section#work-section .container {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0px;
+  gap: 40px;
+}
+section#work-section .container .work-item {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 30px;
+  width: 400px;
+  background-color: #1a2834;
+  box-shadow: 0px 0px 5px -1px #204362;
+  position: relative;
+  overflow-y: hidden;
+}
+section#work-section .container .work-item > div {
+  display: flex;
+  justify-content: center;
+}
+section#work-section .container .work-item:hover .hover-details {
+  transform: translateX(0px);
+}
+section#work-section .container .work-item .image-container img {
+  filter: blur(1px);
+}
+section#work-section .container .work-item .title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+section#work-section .container .work-item .languages-used {
+  gap: 5px;
+}
+section#work-section .container .work-item .languages-used .language {
+  padding: 5px 8px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+section#work-section .container .work-item .hover-details {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 30px 30px;
+  background-color: #2D909D;
+  transform: translateY(500px);
+  transition: 300ms;
+  border-radius: 10px 10px 0px 10px;
 }/*# sourceMappingURL=style.css.map */
