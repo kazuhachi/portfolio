@@ -15,3 +15,12 @@ document.addEventListener("scroll", ()=> {
         navigationDiv.classList.remove("navagationToOpaque")
     }
 })
+
+
+
+/**
+ * scroll to section when link is clicked 
+ */
+document.querySelector(".navigation").addEventListener("click", (e)=>{
+    
+})

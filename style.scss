@@ -75,10 +75,14 @@ section#home-section{
     color: white;
     display: flex;
     justify-content: center;
-    align-items: center;
     box-shadow: 0px 2px 10px -2px #1b2834;
     
-
+    .container{
+        display: flex;
+        max-width: 1200;
+        justify-content: center;
+        align-items: center;
+    }
 
     .content{
         display: flex;
@@ -96,6 +100,10 @@ section#home-section{
         // max-width: 1500px;
         padding-left: 250px;
 
+        &:hover .work{
+            animation: animatework 1s infinite;
+        }
+
         .work{
             font-size: 30px;
             padding: 10px 20px;
@@ -104,6 +112,23 @@ section#home-section{
             font-weight: bold;
             transform: rotate(-10deg);
             margin-bottom: 20px;
+            transition: transform 1s;
+            transform-origin: 0% 100%;
+        }
+
+        @keyframes animatework {
+            0%{
+                transform: rotate(-10deg);
+            }
+            20%{
+                transform: rotate(2deg);
+            }
+            25%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(-10deg);   
+            }
         }
 
         .name{
@@ -169,11 +194,18 @@ section.small-section{
 section#work-section{
     color: white;
     padding-top: 40px;
+    
+    background-image: url("./assets/gears.svg");
+    background-repeat: no-repeat;
+    background-position: 90%  50%;
+    background-size: 400px;
+    background-blend-mode:hue;
     .container{
         display: flex;
         justify-content: center;
         padding: 100px 0px;
         gap: 40px;
+
 
 
         .work-item{
@@ -195,6 +227,8 @@ section#work-section{
 
             &:hover .hover-details{
                 transform: translateX(0px);
+                
+                visibility: visible;
             }
 
             .image-container{
@@ -210,15 +244,17 @@ section#work-section{
             }
 
             .languages-used{
-                gap: 5px;
+                gap: 7px;
                 .language{
                     padding: 5px 8px;
-                    border: 1px solid white;
+                    border: 2px solid white;
                     border-radius: 5px;
+                    font-weight: bold;
                 }
             }
 
             .hover-details{
+                visibility: hidden;
                 position: absolute;
                 left: 0;
                 right: 0;

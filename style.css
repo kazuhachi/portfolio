@@ -64,8 +64,13 @@ section#home-section {
   color: white;
   display: flex;
   justify-content: center;
-  align-items: center;
   box-shadow: 0px 2px 10px -2px #1b2834;
+}
+section#home-section .container {
+  display: flex;
+  max-width: 1200;
+  justify-content: center;
+  align-items: center;
 }
 section#home-section .content {
   display: flex;
@@ -81,6 +86,10 @@ section#home-section .content {
   width: 100%;
   padding-left: 250px;
 }
+section#home-section .content:hover .work {
+  -webkit-animation: animatework 1s infinite;
+          animation: animatework 1s infinite;
+}
 section#home-section .content .work {
   font-size: 30px;
   padding: 10px 20px;
@@ -89,6 +98,36 @@ section#home-section .content .work {
   font-weight: bold;
   transform: rotate(-10deg);
   margin-bottom: 20px;
+  transition: transform 1s;
+  transform-origin: 0% 100%;
+}
+@-webkit-keyframes animatework {
+  0% {
+    transform: rotate(-10deg);
+  }
+  20% {
+    transform: rotate(2deg);
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+@keyframes animatework {
+  0% {
+    transform: rotate(-10deg);
+  }
+  20% {
+    transform: rotate(2deg);
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
 }
 section#home-section .content .name {
   font-size: 50px;
@@ -140,6 +179,11 @@ section.small-section .container img {
 section#work-section {
   color: white;
   padding-top: 40px;
+  background-image: url("./assets/gears.svg");
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+  background-size: 400px;
+  background-blend-mode: hue;
 }
 section#work-section .container {
   display: flex;
@@ -165,6 +209,7 @@ section#work-section .container .work-item > div {
 }
 section#work-section .container .work-item:hover .hover-details {
   transform: translateX(0px);
+  visibility: visible;
 }
 section#work-section .container .work-item .image-container img {
   filter: blur(1px);
@@ -175,14 +220,16 @@ section#work-section .container .work-item .title {
   font-weight: bold;
 }
 section#work-section .container .work-item .languages-used {
-  gap: 5px;
+  gap: 7px;
 }
 section#work-section .container .work-item .languages-used .language {
   padding: 5px 8px;
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 5px;
+  font-weight: bold;
 }
 section#work-section .container .work-item .hover-details {
+  visibility: hidden;
   position: absolute;
   left: 0;
   right: 0;
