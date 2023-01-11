@@ -21,6 +21,9 @@ nav.navigation {
   padding: 60px 0px;
   color: white;
   gap: 20px;
+  z-index: 10000;
+  transition-property: background-color, padding;
+  transition: 500ms;
 }
 nav.navigation a {
   padding: 7px 10px;
@@ -76,7 +79,6 @@ section#home-section .content {
   background-size: 600px;
   height: 100%;
   width: 100%;
-  max-width: 1500px;
   padding-left: 250px;
 }
 section#home-section .content .work {
@@ -137,6 +139,7 @@ section.small-section .container img {
 
 section#work-section {
   color: white;
+  padding-top: 40px;
 }
 section#work-section .container {
   display: flex;

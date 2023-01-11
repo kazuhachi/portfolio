@@ -21,6 +21,9 @@ nav.navigation{
     padding: 60px 0px;
     color: white;
     gap: 20px;
+    z-index: 10000;
+    transition-property: background-color, padding;
+    transition: 500ms ;
 
     a{
         padding: 7px 10px;
@@ -90,7 +93,7 @@ section#home-section{
         background-size: 600px;
         height: 100%;
         width: 100%;
-        max-width: 1500px;
+        // max-width: 1500px;
         padding-left: 250px;
 
         .work{
@@ -165,6 +168,7 @@ section.small-section{
 
 section#work-section{
     color: white;
+    padding-top: 40px;
     .container{
         display: flex;
         justify-content: center;
