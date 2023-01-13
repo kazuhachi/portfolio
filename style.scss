@@ -139,6 +139,28 @@ section#home-section{
         .description{
             max-width: 700px;
         }
+        .social-button-container{
+            button{
+                border: none;
+                width: 40px;
+                height: 40px;
+                border-radius: 100%;
+                font-size: 20px;
+                line-height: 40px;
+            }
+
+            .facebook{
+                color: white;
+                background-color: #3f5c96;
+            }
+
+            .email{
+                background-color: #d53e32;
+                color: white;
+            }
+
+            
+        }
         
         .hero-button-container{
             button{

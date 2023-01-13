@@ -137,6 +137,22 @@ section#home-section .content .name {
 section#home-section .content .description {
   max-width: 700px;
 }
+section#home-section .content .social-button-container button {
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  font-size: 20px;
+  line-height: 40px;
+}
+section#home-section .content .social-button-container .facebook {
+  color: white;
+  background-color: #3f5c96;
+}
+section#home-section .content .social-button-container .email {
+  background-color: #d53e32;
+  color: white;
+}
 section#home-section .content .hero-button-container button {
   border: none;
 }
