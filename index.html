@@ -9,20 +9,20 @@
     <link href="style.css" rel="stylesheet">
     <link href="styleScript.css" rel="stylesheet">
 
+    <!-- dependencies / imports -->
+    <script src="https://kit.fontawesome.com/7c45cd2e88.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="  crossorigin="anonymous"></script>
 
     <!-- scripts -->
     <script src="./script/styleScript.js" crossorigin="anonymous"></script>
-
-    <!-- dependencies / imports -->
-    <script src="https://kit.fontawesome.com/7c45cd2e88.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav class="navigation">
-        <a href="#home" class="selected">Home</a>
-        <a href="#about">About</a>
-        <a href="#Education">Education</a>
-        <a href="#experince">Experience</a>
-        <a href="#contacts">Contacts</a> 
+        <a target-link="home-section" href="#home" class="selected">Home</a>
+        <a target-link="work-section" href="#work">Work</a>
+        <a target-link="education-section" href="#Education">Education</a>
+        <a target-link="experience-section" href="#experince">Experience</a>
+        <a target-link="contacts-section" href="#contacts">Contacts</a> 
     </nav>
     <section class="section" id="home-section">
         <div class="container">
@@ -38,9 +38,14 @@
                     Specializing in developing responsive website.  Primary likes designing web and a bit of back end programming.
                     Mainly uses jQuery, javascript, bootstrap, sass, ajax, PHP and MySQL.
                 </div>
-                <button class="check-work">
-                    Check out my work
-                </button>
+                <div class="hero-button-container">
+                    <button class="check-resume">
+                        Check out resume
+                    </button>
+                    <!-- <button class="check-work">
+                        <a target-link="work-section" href="#work">Check out my works</a>
+                    </button> -->
+                </div>
                 
             </div>
             <div class="hero-image">
@@ -92,12 +97,9 @@
             </div>
         </div>
     </section>
-    <section class="section" id="work-section">
+    <section class="sub-section" id="work-section">
         <div class="container">
-            <div class="work-item">
-                <div class="image-container">
-                    <img src="./assets/pic.png">
-                </div>
+            <div class="work-item-card">
                 <div class="title">
                     Web-based Research Clearing House in University of Eastern Philippines
                 </div>
@@ -110,24 +112,20 @@
                 </div>
                 <div class="hover-details">
                     <p>
-                        Thesis: A database of research paper / thesis from University University of Eastern Philippines.
-                        It helps the researchers or the future reasearchers to see if a certain research is already done by searching
-                        and provides a journal from a related researches. 
+                        The system can maintain and store database of researches. It has also database for authors, editors, fund source, patents, presentations, and published researches. It has a functionality to determine whether the submitted researches are conducted or not. 
                     </p>
                     <button class="github-button">
                         <i class="fa-brands fa-github"></i>Check at  github 
                     </button>
                 </div>
             </div>
-            <div class="work-item">
-                <div class="image-container">
-                    <img src="./assets/pic.png">
-                </div>
+            <div class="work-item-card">
                 <div class="title">
                     Tools or Utility
                 </div>
                 <div class="languages-used">
                     <div class="language">Javascript</div>
+                    <div class="language">Chrome Extension Injection</div>
                 </div>
                 <div class="hover-details">
                     <p>
@@ -138,24 +136,42 @@
                     </button>
                 </div>
             </div>
-            <div class="work-item">
-                <div class="image-container">
-                    <img src="assets/pic.png">
-                </div>
+            <div class="work-item-card">
                 <div class="title">
                     Employee management system
                 </div>
                 <div class="languages-used">
                     <div class="language">Javascript</div>
+                    <div class="language">Jquery</div>
                     <div class="language">Bootstrap</div>
                 </div>
                 <div class="hover-details">
                     <p>
-                        Unfinished project. It simply let the user to create leave requests and a scheduler.
+                        A front end design. It simply let the user to create leave requests and a scheduler.
                     </p>
                     
                     <button class="github-button">
                         <i class="fa-brands fa-github"></i>Check at  github 
+                    </button>
+                </div>
+            </div>
+
+            <div class="work-item-card">
+                <div class="title">
+                    Ticket Finder System
+                </div>
+                <div class="languages-used">
+                    <div class="language">Figma</div>
+                </div>
+                <div class="hover-details">
+                    <p>
+                        A web design. For a future project Ticket finder. A collection of a ticket or transaction that has been processed incorrectly.
+                    </p>
+                    
+                    <button class="github-button">
+                        <a href="https://www.figma.com/proto/qjJgtpk6ux2boJPjlkR4Ly/Untitled?node-id=48%3A2600&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2">
+                            <i class="fa-brands fa-figma"></i>Check Prototype
+                        </a>
                     </button>
                 </div>
             </div>

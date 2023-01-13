@@ -71,6 +71,7 @@ section#home-section .container {
   max-width: 1200;
   justify-content: center;
   align-items: center;
+  gap: 30px;
 }
 section#home-section .content {
   display: flex;
@@ -87,8 +88,8 @@ section#home-section .content {
   padding-left: 250px;
 }
 section#home-section .content:hover .work {
-  -webkit-animation: animatework 1s infinite;
-          animation: animatework 1s infinite;
+  -webkit-animation: animatework 1s;
+          animation: animatework 1s;
 }
 section#home-section .content .work {
   font-size: 30px;
@@ -134,9 +135,27 @@ section#home-section .content .name {
   font-weight: bold;
 }
 section#home-section .content .description {
-  max-width: 800px;
+  max-width: 700px;
 }
-section#home-section .content button.check-work {
+section#home-section .content .hero-button-container button {
+  border: none;
+}
+section#home-section .content .hero-button-container .check-work {
+  margin-top: 20px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 15px 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 300ms;
+}
+section#home-section .content .hero-button-container .check-work:hover {
+  background-color: #25afc1;
+}
+section#home-section .content .hero-button-container .check-resume {
   margin-top: 20px;
   background-color: #2D909D;
   color: white;
@@ -147,7 +166,7 @@ section#home-section .content button.check-work {
   cursor: pointer;
   transition: background-color 300ms;
 }
-section#home-section .content button.check-work:hover {
+section#home-section .content .hero-button-container .check-resume:hover {
   background-color: #25afc1;
 }
 section#home-section .hero-image {
@@ -173,12 +192,14 @@ section.small-section .container {
   align-items: center;
 }
 section.small-section .container img {
-  height: 70px;
+  height: 50px;
 }
 
 section#work-section {
   color: white;
   padding-top: 40px;
+  display: flex;
+  justify-content: center;
   background-image: url("./assets/gears.svg");
   background-repeat: no-repeat;
   background-position: 90% 50%;
@@ -187,63 +208,60 @@ section#work-section {
 }
 section#work-section .container {
   display: flex;
+  max-width: 1200px;
+  flex-wrap: wrap;
   justify-content: center;
   padding: 100px 0px;
-  gap: 40px;
+  gap: 30px;
+  align-items: center;
 }
-section#work-section .container .work-item {
+section#work-section .container .work-item-card {
   display: flex;
-  gap: 40px;
   flex-direction: column;
   border-radius: 10px;
-  padding: 30px;
-  width: 400px;
+  max-width: 400px;
   background-color: #1a2834;
   box-shadow: 0px 0px 5px -1px #204362;
   position: relative;
   overflow-y: hidden;
+  justify-items: center;
 }
-section#work-section .container .work-item > div {
+section#work-section .container .work-item-card > div {
   display: flex;
   justify-content: center;
+  padding: 30px;
 }
-section#work-section .container .work-item:hover .hover-details {
-  transform: translateX(0px);
-  visibility: visible;
-}
-section#work-section .container .work-item .image-container img {
-  filter: blur(1px);
-}
-section#work-section .container .work-item .title {
+section#work-section .container .work-item-card .title {
   text-align: center;
   font-size: 18px;
   font-weight: bold;
 }
-section#work-section .container .work-item .languages-used {
+section#work-section .container .work-item-card .languages-used {
   gap: 7px;
+  flex-wrap: wrap;
 }
-section#work-section .container .work-item .languages-used .language {
+section#work-section .container .work-item-card .languages-used .language {
+  font-size: 14px;
   padding: 5px 8px;
-  border: 2px solid white;
+  border: 1px solid white;
+  color: white;
   border-radius: 5px;
   font-weight: bold;
 }
-section#work-section .container .work-item .hover-details {
-  visibility: hidden;
-  position: absolute;
+section#work-section .container .work-item-card .hover-details {
+  color: white;
   left: 0;
   right: 0;
   bottom: 0;
   padding: 30px 30px;
   background-color: #2D909D;
-  transform: translateY(500px);
   transition: 300ms;
   border-radius: 10px 10px 0px 10px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-section#work-section .container .work-item .hover-details .github-button {
+section#work-section .container .work-item-card .hover-details .github-button {
   cursor: pointer;
   color: white;
   padding: 10px 20px;
@@ -251,8 +269,9 @@ section#work-section .container .work-item .hover-details .github-button {
   background-color: black;
   display: inline-flex;
   align-items: center;
+  border: none;
 }
-section#work-section .container .work-item .hover-details .github-button i {
+section#work-section .container .work-item-card .hover-details .github-button i {
   font-size: 20px;
   margin-right: 10px;
 }/*# sourceMappingURL=style.css.map */

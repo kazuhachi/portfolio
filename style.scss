@@ -82,6 +82,7 @@ section#home-section{
         max-width: 1200;
         justify-content: center;
         align-items: center;
+        gap: 30px;
     }
 
     .content{
@@ -101,7 +102,7 @@ section#home-section{
         padding-left: 250px;
 
         &:hover .work{
-            animation: animatework 1s infinite;
+            animation: animatework 1s;
         }
 
         .work{
@@ -136,23 +137,46 @@ section#home-section{
             font-weight: bold;
         }
         .description{
-            max-width: 800px;
+            max-width: 700px;
         }
+        
+        .hero-button-container{
+            button{
+                border: none;
+            }
+            .check-work{
+                margin-top: 20px;
+                background-color: transparent;
+                border: 1px solid white;
+                color: white;
+                padding: 15px 20px;
+                font-weight: bold;
+                border-radius: 10px;
+                font-size: 18px;
+                cursor: pointer;
+                
+                transition: background-color 300ms;
+    
+                &:hover{
+                    background-color: #25afc1;
+                }
+            }
 
-        button.check-work{
-            margin-top: 20px;
-            background-color: #2D909D;
-            color: white;
-            padding: 15px 20px;
-            font-weight: bold;
-            border-radius: 10px;
-            font-size: 18px;
-            cursor: pointer;
-            
-            transition: background-color 300ms;
-
-            &:hover{
-                background-color: #25afc1;
+            .check-resume{
+                margin-top: 20px;
+                background-color: #2D909D;
+                color: white;
+                padding: 15px 20px;
+                font-weight: bold;
+                border-radius: 10px;
+                font-size: 18px;
+                cursor: pointer;
+                
+                transition: background-color 300ms;
+    
+                &:hover{
+                    background-color: #25afc1;
+                }
             }
         }
     }
@@ -185,7 +209,7 @@ section.small-section{
         align-items: center;
         
         img{
-            height: 70px;
+            height: 50px;
         }
     }
 }
@@ -194,7 +218,8 @@ section.small-section{
 section#work-section{
     color: white;
     padding-top: 40px;
-    
+    display: flex;
+    justify-content: center;
     background-image: url("./assets/gears.svg");
     background-repeat: no-repeat;
     background-position: 90%  50%;
@@ -202,66 +227,59 @@ section#work-section{
     background-blend-mode:hue;
     .container{
         display: flex;
+        max-width: 1200px;
+        flex-wrap: wrap;
         justify-content: center;
         padding: 100px 0px;
-        gap: 40px;
+        gap: 30px;
+        align-items: center;
 
-
-
-        .work-item{
+        .work-item-card{
             display: flex;
-            gap: 40px;
+            // gap: 20px;
             flex-direction: column;
             border-radius: 10px;
-            padding: 30px;
-            width: 400px;
+            // padding: 30px;
+            max-width: 400px;
             background-color: #1a2834;
             box-shadow: 0px 0px 5px -1px #204362;
             position: relative;
             overflow-y: hidden;
-
+            justify-items: center;
             &> div{
                 display: flex;
                 justify-content: center;
+                padding: 30px;
             }
 
-            &:hover .hover-details{
-                transform: translateX(0px);
-                
-                visibility: visible;
-            }
-
-            .image-container{
-                img{
-                    filter: blur(1px);
-                }
-            }
-    
             .title{
                 text-align: center;
                 font-size: 18px;
                 font-weight: bold;
             }
-
             .languages-used{
                 gap: 7px;
+                flex-wrap: wrap;
                 .language{
+                    
+                    font-size: 14px;
                     padding: 5px 8px;
-                    border: 2px solid white;
+                    border: 1px solid white;
+                    // background-color: black;
+                    color: white;
                     border-radius: 5px;
                     font-weight: bold;
                 }
             }
 
+
             .hover-details{
-                visibility: hidden;
-                position: absolute;
+                color:white;
                 left: 0;
                 right: 0;
                 bottom: 0;
                 padding: 30px 30px;
                 background-color: #2D909D;
-                transform: translateY(500px);
                 transition: 300ms;
                 border-radius: 10px 10px 0px 10px;
                 display: flex;
@@ -276,6 +294,7 @@ section#work-section{
                     background-color: black;
                     display: inline-flex;
                     align-items: center;
+                    border: none;
 
                     i{
                         font-size: 20px;
@@ -284,6 +303,8 @@ section#work-section{
                 }
             }
         }
+
+
     }
 
     
