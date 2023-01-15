@@ -69,6 +69,7 @@ nav.navigation{
 }
 
 section#home-section{
+    padding: 0px 20px;
     background: rgb(31,55,77);
     background: radial-gradient(circle, rgba(31,55,77,1) 0%, rgba(24,32,39,1) 100%);
     background-position: 25% 100%;
@@ -99,7 +100,7 @@ section#home-section{
         height: 100%;
         width: 100%;
         // max-width: 1500px;
-        padding-left: 250px;
+        // padding-left: 250px;
 
         &:hover .work{
             animation: animatework 1s;
@@ -206,7 +207,7 @@ section#home-section{
     .hero-image{
         // position: absolute;
         // right: 15%;
-        padding-right: 250px;
+        // padding-right: 250px;
         img{                
             height: 700px;
         }
@@ -220,6 +221,7 @@ section.small-section{
     color: #aeaeae;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     font-weight: bold;
     gap: 40px;
@@ -247,6 +249,7 @@ section#work-section{
     background-position: 90%  50%;
     background-size: 400px;
     background-blend-mode:hue;
+    padding: 20px;
     .container{
         display: flex;
         max-width: 1200px;

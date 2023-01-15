@@ -58,6 +58,7 @@ nav.navigation a.selected.selected:after {
 }
 
 section#home-section {
+  padding: 0px 20px;
   background: rgb(31, 55, 77);
   background: radial-gradient(circle, rgb(31, 55, 77) 0%, rgb(24, 32, 39) 100%);
   background-position: 25% 100%;
@@ -85,7 +86,6 @@ section#home-section .content {
   background-size: 600px;
   height: 100%;
   width: 100%;
-  padding-left: 250px;
 }
 section#home-section .content:hover .work {
   -webkit-animation: animatework 1s;
@@ -185,9 +185,6 @@ section#home-section .content .hero-button-container .check-resume {
 section#home-section .content .hero-button-container .check-resume:hover {
   background-color: #25afc1;
 }
-section#home-section .hero-image {
-  padding-right: 250px;
-}
 section#home-section .hero-image img {
   height: 700px;
 }
@@ -197,6 +194,7 @@ section.small-section {
   color: #aeaeae;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   font-weight: bold;
   gap: 40px;
@@ -221,6 +219,7 @@ section#work-section {
   background-position: 90% 50%;
   background-size: 400px;
   background-blend-mode: hue;
+  padding: 20px;
 }
 section#work-section .container {
   display: flex;

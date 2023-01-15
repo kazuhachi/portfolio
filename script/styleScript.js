@@ -7,7 +7,7 @@ document.addEventListener("scroll", ()=> {
     let scrollAmount = window.scrollY;
     let navigationDiv = document.querySelector(".navigation");
 
-    if (scrollAmount > 200){
+    if (scrollAmount > 0){
         navigationDiv.classList.add("navagationToOpaque");
     }else{
         navigationDiv.classList.remove("navagationToOpaque")

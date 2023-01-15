@@ -1,0 +1,48 @@
+
+ @mixin absoluteHeroImage{
+    .hero-image{
+        display: none;
+    }
+ }
+
+ @mixin shrinkSkillsSection{
+    #skills{
+        transform: scale(0.8);
+    }
+ }
+
+
+ @media only screen and (min-width: 0px) and (max-width: 877px){
+    @include absoluteHeroImage;
+    @include shrinkSkillsSection;
+
+    .navigation{
+        padding: 35px 0px!important;
+    }
+
+    #home-section{
+        .work{
+            margin-bottom: 0px!important;
+        }
+    }
+ }
+
+ 
+ 
+ @media only screen and (max-width: 576px){
+    
+ }
+ @media only screen and (min-width: 577px) and (max-width: 768px){
+
+ }
+ @media only screen and (min-width: 769px) and (max-width: 992px){
+
+ }
+ @media only screen and (min-width: 993px) and (max-width: 1200px){
+    
+ }
+ @media only screen and (min-width: 1200px){
+    // .navigation{
+    //     background-color: black;
+    // }
+ }

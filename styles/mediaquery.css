@@ -1,0 +1,14 @@
+@media only screen and (min-width: 0px) and (max-width: 877px) {
+  .hero-image {
+    display: none;
+  }
+  #skills {
+    transform: scale(0.8);
+  }
+  .navigation {
+    padding: 35px 0px !important;
+  }
+  #home-section .work {
+    margin-bottom: 0px !important;
+  }
+}/*# sourceMappingURL=mediaquery.css.map */
