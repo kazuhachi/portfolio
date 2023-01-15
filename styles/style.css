@@ -218,7 +218,6 @@ section#work-section {
   background-repeat: no-repeat;
   background-position: 90% 50%;
   background-size: 400px;
-  background-blend-mode: hue;
   padding: 20px;
 }
 section#work-section .container {
