@@ -255,11 +255,12 @@ section#work-section{
         max-width: 1200px;
         flex-wrap: wrap;
         justify-content: center;
-        padding: 100px 0px;
+        // padding: 100px 0px;
         gap: 30px;
         align-items: center;
 
         .work-item-card{
+            opacity: 0;
             display: flex;
             // gap: 20px;
             flex-direction: column;
@@ -325,6 +326,21 @@ section#work-section{
                         font-size: 20px;
                         margin-right: 10px;
                     }
+                }
+            }
+
+            &.shown{
+                animation: show 400ms forwards;
+                // animation: name duration timing-function delay iteration-count direction fill-mode;
+            }
+            @keyframes show{
+                0%{
+                    opacity: 0;
+                    transform : translateY(-50px);
+                }
+                100%{ 
+                    opacity: 1;
+                    transform : translateY(0px);
                 }
             }
         }

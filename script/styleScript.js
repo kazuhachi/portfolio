@@ -16,6 +16,26 @@ document.addEventListener("scroll", ()=> {
 
 
 
+let callback = (entries, oberver) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting){
+            entry.target.classList.add("shown")
+            // console.log(entry.target)
+        }
+    })
+   
+}
+
+
+//  intersection oberver API
+let oberver = new IntersectionObserver(callback, {
+    root: document.querySelector('document'),
+    rootMargin: '0px',
+    threshold: 0.7
+})
+
+
+
 
 $(document).ready(() => {
 
@@ -31,7 +51,6 @@ $(document).ready(() => {
 
         $(this).addClass("selected");
 
-
         try{
             $([document.documentElement]).animate({
                 scrollTop: $(`#${target}`).offset().top
@@ -40,9 +59,15 @@ $(document).ready(() => {
             console.log(`link not`)
         }
     })
-    
 
-
-
+    let targets = document.querySelectorAll(".work-item-card");
+    targets.forEach(item => {
+        oberver.observe(item)
+    })
 
 })
+
+
+
+
+
