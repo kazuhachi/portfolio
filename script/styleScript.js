@@ -53,7 +53,7 @@ $(document).ready(() => {
 
         try{
             $([document.documentElement]).animate({
-                scrollTop: $(`#${target}`).offset().top
+                scrollTop: $(`#${target}`).offset().top + -60   
             }, 500)
         }catch(err){
             console.log(`link not`)
