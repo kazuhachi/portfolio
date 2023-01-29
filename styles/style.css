@@ -233,7 +233,7 @@ section#work-section .container .work-item-card {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  max-width: 400px;
+  max-width: 500px;
   background-color: #1a2834;
   box-shadow: 0px 0px 5px -1px #204362;
   position: relative;
