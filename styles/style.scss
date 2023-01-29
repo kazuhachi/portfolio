@@ -41,9 +41,6 @@ nav.navigation{
             transform-origin: bottom left;
             transition:  300ms ease-out;
           }
-        &:hover{
-            // background-color: #25afc138;
-        }
         &:hover:after {
             transform: scaleX(1);
             transform-origin: bottom left;
